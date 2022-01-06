@@ -5,7 +5,7 @@ int smokeA0 = A1;
 int IR1_out = HIGH;
 int IR2_out = HIGH;
 int count = 0;
-String apiKey = "3I0KQQ80YV4HTJSE";  //Change this key to your "Write API key"
+String apiKey = "";  //Change this key to your "Write API key"
 
 
 void setup() {
@@ -90,9 +90,9 @@ boolean connectWiFi() {               // Connect to Wifi Function
   delay(100);                         // wait for 100 mSec
 
   String cmd = "AT+CWJAP=\"";         // Connect to WiFi
-  cmd += "KT18";                   // ssid_name
+  cmd += "";                   // ssid_name
   cmd += "\",\"";
-  cmd += "1029384756";                // password
+  cmd += "";                // password
   cmd += "\"\r\n";              
    
   Serial.println(cmd);                // Display Connect Wifi Command on PC
